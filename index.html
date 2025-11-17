@@ -8,22 +8,41 @@
   <style>
     body { font-family: 'Segoe UI', sans-serif; }
     .hero { background-color: #0a3d62; color: white; padding: 60px 0; text-align: center; }
-    .hero img { border-radius: 10px; max-width: 200px; margin-bottom: 20px; }
-    .section-title { margin-top: 40px; margin-bottom: 20px; }
-    .card { margin-bottom: 20px; }
+    .hero h1 { font-size: 2.5rem; font-weight: 600; margin-bottom: 10px; }
+    .hero .lead { font-size: 1.1rem; color: #d4af37; font-weight: 500; margin-bottom: 5px; }
+    .section-title { margin-top: 40px; margin-bottom: 20px; font-weight: 600; color: #0a3d62; }
+    .card { margin-bottom: 20px; border: 1px solid #ddd; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
     .contact a { text-decoration: none; color: #0a3d62; }
     footer { background-color: #0a3d62; color: white; padding: 20px; text-align: center; }
+    
+    /* Circular Photo Styling */
+    .profile-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #d4af37;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      margin: 0 auto 30px;
+      display: block;
+    }
+    
+    /* Left Panel Enhancement */
+    .left-panel-title {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-top: 0;
+    }
   </style>
 </head>
 <body>
 
-<!-- Hero Section -->
+<!-- Hero Section (Updated - Photo Removed) -->
 <div class="hero d-flex justify-content-center align-items-center text-center">
-  <img src="/image.png" alt="Selvakumar Ramasamy" class="me-4" style="max-width:200px; border-radius:10px;">
   <div>
     <h1>Selvakumar Ramasamy</h1>
     <p class="lead">Vice President | IT Executive | Technology Transformation Leader</p>
-    <p>Chennai, Tamil Nadu, India</p>
+    <p style="color: #e8e8e8;">Chennai, Tamil Nadu, India</p>
   </div>
 </div>
 
@@ -33,6 +52,9 @@
     
     <!-- Left Panel -->
     <div class="col-md-4">
+      <!-- Circular Profile Photo -->
+      <img src="/image.png" alt="Selvakumar Ramasamy" class="profile-photo">
+      
       <!-- Core Competencies -->
       <h2 class="section-title">Core Competencies</h2>
       <div class="row">
@@ -58,7 +80,7 @@
         <li><a href="https://certificates.simplicdn.net/share/thumb_2769258.png" target="_blank">TOGAF</a></li>
         <li><a href="https://verify.be10x.ai/certificate/2b2a6763-ab82-4b8a-866e-f97d6a39adc620533" target="_blank">AI Tools Workshop 4.0</a></li>
       </ul>
-      <p>Note: All are course completion certifications.</p>
+      <p style="font-size: 0.9rem; color: #666;">Note: All are course completion certifications.</p>
 
       <!-- Awards -->
       <h2 class="section-title">Awards</h2>
@@ -180,5 +202,3 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
