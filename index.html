@@ -7,242 +7,144 @@
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    body {
-      font-family: 'Roboto', Arial, sans-serif;
-      background: #e8eaef;
-      color: #2e3440;
-      margin: 0;
-    }
-    .wrapper {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 12px;
-    }
-    .profile-card {
-      background: #fff;
-      border-radius: 22px;
-      margin-bottom: 22px;
-      box-shadow: 0 4px 24px rgba(0,24,48,0.13);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 32px 28px 24px 28px;
-      text-align: center;
-    }
-    .profile-img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 2px 10px rgba(24,103,192,0.08);
-      margin-bottom: 12px;
-    }
-    .profile-title {
-      font-size: 2em;
-      font-weight: 700;
-      margin-bottom: 8px;
-      letter-spacing: 0.02em;
-    }
-    .tagline {
-      background: #1867c0;
-      color: #fff;
-      padding: 6px 16px;
-      border-radius: 14px;
-      font-size: 1em;
-      display:inline-block;
-      margin-bottom: 14px;
-    }
-    .info-row {
-      margin-bottom: 7px;
-      font-size: 1.05em;
-    }
-    .actions {
-      margin-top: 16px;
-    }
-    .btn-download {
-      background: #1867c0;
-      color: #fff;
-      font-weight: bold;
-      padding: 10px 26px;
-      border: none;
-      border-radius: 7px;
-      text-decoration: none;
-      font-size: 1em;
-      cursor: pointer;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    }
-    .btn-download:hover { background: #15599c; }
-    .section-card {
-      background: #f7faff;
-      border-radius: 18px;
-      box-shadow: 0 2px 15px rgba(24,103,192,0.07);
-      margin-bottom: 22px;
-      padding: 20px 28px;
-      display: flex;
-      flex-direction: column;
-    }
-    .section-title {
-      font-size: 1.28em;
-      font-weight: 600;
-      color: #1867c0;
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-    }
-    .section-title i {
-      margin-right: 9px;
-    }
-    ul, .section-list {
-      padding-left: 18px;
-      margin: 0;
-    }
-    li {
-      margin-bottom: 8px;
-    }
-    .experience-list {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-    .experience-list .job-title {
-      font-weight:600;
-      margin-top:12px;
-    }
-    .experience-list .job-meta {
-      font-size:0.97em;
-      color:#2984de;
-      margin-bottom:5px;
-    }
-    .achievements {
-      margin-bottom:5px;
-      font-size:0.98em;
-    }
-    @media (max-width: 600px) {
-      .profile-card, .section-card {padding: 12px 8px;}
-      .profile-img {width: 88px;height: 88px;}
-      .wrapper {max-width: 99vw;}
+    body {font-family: 'Segoe UI', Arial, sans-serif; background: #f4f6fa; color: #222;}
+    .banner {background: linear-gradient(90deg,#003366 70%,#2980b9 100%); color:#fff; padding: 36px 0; text-align:center; box-shadow:0 2px 20px #2221;}
+    .banner h1 {font-size:2.5em; margin-bottom:6px;}
+    .banner h3 {margin-bottom:20px;}
+    .profile-img {width:140px; height:140px; border-radius:50%; border:4px solid #d4af37; box-shadow:0 0 12px #aaa; margin-top:-70px;}
+    .nav-icons {display:flex; justify-content:center; gap:28px; margin-top:18px;}
+    .nav-icons i {font-size:2em; color:#003366; background:#fff; border-radius:50%; padding:10px; box-shadow:0 2px 8px #bdbdbd;}
+    section {background:#fff; margin:36px auto; max-width:700px; border-radius:14px; box-shadow:0 2px 14px #ccd; padding:28px;}
+    h2 {color:#003366; display:flex; align-items:center; gap:9px;}
+    .metrics li {font-weight:600;}
+    .resume-btn {display:inline-block; margin-top:12px; background:#2980b9; color:#fff; padding:12px 28px; border-radius:7px; font-weight:600; text-decoration:none; box-shadow:0 2px 12px #bbb;}
+    .portfolio-list li, .testimonials li {margin-bottom:10px;}
+    footer {text-align:center; margin:28px 0 12px; color:#888; font-size:1em;}
+    @media (max-width:600px) {
+      .banner h1 {font-size:1.5em;}
+      section {padding:13px; margin:10px;}
+      .profile-img {width:100px; height:100px;}
     }
   </style>
 </head>
 <body>
-  <div class="wrapper">
-    <div class="profile-card">
-      <!-- Add your profile image -->
-      <img src="/image.png" alt="Selvakumar Ramasamy" class="profile-img">
-      <div class="profile-title">Selvakumar Ramasamy</div>
-      <div class="tagline">Driving global technology transformation—one innovation at a time.</div>
-      <div class="info-row"><strong>Chennai, Tamil Nadu, India</strong></div>
-      <div class="info-row">
-        <i class="fas fa-phone"></i> +91 9841125830 &nbsp; 
-        <i class="fas fa-envelope"></i> btechselvakumar@gmail.com
-      </div>
-      <div class="info-row">
-        <i class="fab fa-linkedin"></i> 
-        <a href="https://linkedin.com/in/selvakumar-ramasamy-01a39320" target="_blank" style="color:#1867c0;">LinkedIn</a>
-      </div>
-      <!--<div class="actions">
-        <a class="btn-download" href="Selvakumar_Ramasamy_Resume.pdf" download>
-          <i class="fas fa-download"></i> Download Resume (PDF)
-        </a>
-      </div>-->
+  <div class="banner">
+    <img src="/image.png" alt="Selvakumar Ramasamy" class="profile-img">
+    <h1>Selvakumar Ramasamy</h1>
+    <h3>Vice President | IT Transformation Leader | Executive</h3>
+    <div>
+      Chennai, Tamil Nadu, India
+      <span style="margin-left:15px;"><i class="fas fa-phone"></i> +91 9841125830</span>
+      <span style="margin-left:15px;"><i class="fas fa-envelope"></i> btechselvakumar@gmail.com</span>
+      <span style="margin-left:15px;"><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/selvakumar-ramasamy-01a39320" style="color:#ffd700;text-decoration:underline;">LinkedIn</a></span>
     </div>
-    
-    <div class="section-card">
-      <div class="section-title"><i class="fas fa-star"></i> Career Highlights</div>
-      <ul>
-        <li>22+ years leading technology transformation for global enterprises.</li>
-        <li>VP, IT Executive specializing in Cloud, AI, SaaS, and project delivery.</li>
-        <li>Launched multimillion-dollar AI/AR product for SoftBank.</li>
-        <li>Managed global teams of 640+ members.</li>
-      </ul>
-    </div>
-
-    <div class="section-card">
-      <div class="section-title"><i class="fas fa-chart-line"></i> Measurable Achievements</div>
-      <ul>
-        <li>Reduced development time by <strong>20%</strong> through DevOps automation.</li>
-        <li>Led SaaS deployment for <strong>1,200+ enterprise clients</strong>.</li>
-        <li>Accelerated delivery via robust cloud pipelines (GCP, Azure).</li>
-        <li>Transformed workflow—optimized team productivity and project quality.</li>
-      </ul>
-    </div>
-
-    <div class="section-card">
-      <div class="section-title"><i class="fas fa-cogs"></i> Skill Set & Technologies</div>
-      <ul>
-        <li>C#, .Net, JavaScript, HTML5, CSS</li>
-        <li>GCP, Azure, Cloud SQL</li>
-        <li>Jenkins, Git, Redmine</li>
-        <li>OpenAI GPT, AI-powered AR integrations</li>
-        <li>MDM, HR SaaS, OMS, POS, Baan ERP</li>
-        <li>.Net 3DES encryption, secure password tools</li>
-        <li>CMMI V3.0, QA frameworks</li>
-      </ul>
-    </div>
-
-    <div class="section-card">
-      <div class="section-title"><i class="fas fa-briefcase"></i> Experience</div>
-      <ul class="experience-list">
-        <li>
-          <div class="job-title">General Manager – Product & Project Management</div>
-          <div class="job-meta">Vaken Technologies / IVTL Infoview Technologies Pvt. Ltd.<br>Nov 2019 – Present</div>
-          <div class="achievements">
-            Launched AI-driven AR smart glasses for SoftBank.<br>
-            Directed 50+ engineers in SaaS product design/delivery.
-          </div>
-        </li>
-        <li>
-          <div class="job-title">Project Manager / Team Leader</div>
-          <div class="job-meta">IVTL Infoview Technologies Pvt. Ltd.<br>Mar 2014 – Oct 2019</div>
-          <div class="achievements">
-            Managed HR SaaS for 1,200+ Japanese enterprises.<br>
-            Led teams of 640+ engineers to hit major milestones.
-          </div>
-        </li>
-        <li>
-          <div class="job-title">Team Leader – OMS, POS</div>
-          <div class="job-meta">IVTL Infoview Technologies Pvt. Ltd.<br>Jul 2011 – Feb 2014</div>
-          <div class="achievements">
-            Delivered multi-currency POS; optimized ERP integration.
-          </div>
-        </li>
-        <li>
-          <div class="job-title">Senior Software Developer</div>
-          <div class="job-meta">Health Plan Systems (I) Pvt. Ltd.<br>Sep 2008 – May 2011</div>
-          <div class="achievements">
-            .Net 3DES secure password tool delivered for 4+ projects.
-          </div>
-        </li>
-      </ul>
-    </div>
-
-    <div class="section-card">
-      <div class="section-title"><i class="fas fa-certificate"></i> Certifications & Awards</div>
-      <ul>
-        <li>PMP | Agile Scrum Master (ASM®) | TOGAF | AI Tools Workshop 4.0</li>
-        <li>Lifetime Achievement Award – Vaken Technologies & Axseed (2025)</li>
-        <li>Best Manager Award – Works Applications</li>
-      </ul>
-    </div>
-
-    <div class="section-card">
-      <div class="section-title"><i class="fas fa-graduation-cap"></i> Education</div>
-      <ul>
-        <li>B.Tech – IT, Vel MultiTech SRS Eng. College</li>
-        <li>Diploma in Computer Technology, The Christian Institute for Technical Education</li>
-      </ul>
-    </div>
-
-    <div class="section-card">
-      <div class="section-title"><i class="fas fa-folder-open"></i> Portfolio & Media</div>
-      <ul>
-        <li><a href="#" target="_blank">AI-driven AR Smart Glasses – Case Study</a></li>
-        <li><a href="#" target="_blank">Press Interview – Tech Leadership Award</a></li>
-        <li><a href="#" target="_blank">Demo – POS/OMS Deployment</a></li>
-        <li><a href="#" target="_blank">Testimonial – Client/Industry Partner</a></li>
-      </ul>
+    <a class="resume-btn" href="Selvakumar_Ramasamy_Resume.pdf" download>Download Resume (PDF)</a>
+    <div class="nav-icons">
+      <i class="fas fa-chart-line" title="Career Highlights"></i>
+      <i class="fas fa-award" title="Achievements"></i>
+      <i class="fas fa-cogs" title="Skills"></i>
+      <i class="fas fa-briefcase" title="Experience"></i>
+      <i class="fas fa-user-graduate" title="Education"></i>
+      <i class="fas fa-folder-open" title="Portfolio"></i>
     </div>
   </div>
+
+  <section>
+    <h2><i class="fas fa-chart-line"></i> Career Highlights</h2>
+    <ul>
+      <li>22+ years leading technology transformation for global enterprises.</li>
+      <li>Launched multimillion-dollar AI/AR products for SoftBank.</li>
+      <li>Managed global teams (640+ members).</li>
+      <li>VP, IT Executive for Cloud, AI, SaaS and project delivery.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><i class="fas fa-award"></i> Measurable Achievements</h2>
+    <ul class="metrics">
+      <li>Reduced development time by <b>20%</b> via DevOps automation.</li>
+      <li>Led SaaS for <b>1,200+ enterprise clients</b>.</li>
+      <li>Accelerated delivery using robust cloud pipelines (GCP, Azure).</li>
+      <li>Optimized productivity and project quality in large teams.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><i class="fas fa-cogs"></i> Skill Set & Technologies</h2>
+    <ul>
+      <li>C#, .NET, JavaScript, HTML5, CSS</li>
+      <li>GCP, Azure, Cloud SQL</li>
+      <li>Jenkins, Git, Redmine</li>
+      <li>OpenAI GPT, AR, AI-powered integrations</li>
+      <li>MDM, HR SaaS, OMS, POS, Baan ERP</li>
+      <li>.NET 3DES encryption, Secure tools</li>
+      <li>CMMI V3.0, QA frameworks</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><i class="fas fa-briefcase"></i> Experience</h2>
+    <b>General Manager</b> – Product & Project Management<br>
+    Vaken Technologies / IVTL Infoview Technologies Pvt. Ltd.<br>
+    <i>Nov 2019 – Present</i>
+    <ul>
+      <li>Launched AI-driven AR smart glasses for SoftBank.</li>
+      <li>Directed 50+ engineers in SaaS product design/delivery.</li>
+    </ul>
+    <b>Project Manager / Team Leader</b><br>
+    IVTL Infoview Technologies Pvt. Ltd.<br>
+    <i>Mar 2014 – Oct 2019</i>
+    <ul>
+      <li>Managed HR SaaS for 1,200+ Japanese enterprises.</li>
+      <li>Led teams of 640+ engineers to milestones.</li>
+    </ul>
+    <b>Team Leader – OMS, POS</b><br>
+    IVTL Infoview Technologies Pvt. Ltd.<br>
+    <i>Jul 2011 – Feb 2014</i>
+    <ul>
+      <li>Delivered multi-currency POS, optimized ERP integration.</li>
+    </ul>
+    <b>Senior Software Developer</b><br>
+    Health Plan Systems (I) Pvt. Ltd.<br>
+    <i>Sep 2008 – May 2011</i>
+    <ul>
+      <li>.NET 3DES secure password tool for 4+ projects.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><i class="fas fa-award"></i> Certifications & Awards</h2>
+    <ul>
+      <li>PMP | Agile Scrum Master (ASM®) | TOGAF | AI Tools Workshop 4.0</li>
+      <li>Lifetime Achievement Award – Vaken Technologies & Axseed (2025)</li>
+      <li>Best Manager Award – Works Applications</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><i class="fas fa-user-graduate"></i> Education</h2>
+    <ul>
+      <li>B.Tech – IT, Vel MultiTech SRS Eng. College</li>
+      <li>Diploma in Computer Technology, The Christian Institute for Technical Education</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><i class="fas fa-folder-open"></i> Portfolio & Media</h2>
+    <ul class="portfolio-list">
+      <li><a href="#">AI-driven AR Smart Glasses – Case Study</a></li>
+      <li><a href="#">Press Interview – Tech Leadership Award</a></li>
+      <li><a href="#">Demo – POS/OMS Deployment</a></li>
+    </ul>
+    <h3 style="margin-top:22px;">Testimonials</h3>
+    <ul class="testimonials">
+      <li>"Selvakumar’s strategic vision catalyzed our growth." – Board Member</li>
+      <li>"Exceptional team leader and mentor—delivers consistently." – Senior Manager, SoftBank</li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 Selvakumar Ramasamy | All Rights Reserved
+  </footer>
 </body>
 </html>
-
