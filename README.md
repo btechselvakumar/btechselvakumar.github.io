@@ -1,6 +1,6 @@
 # Selvakumar Ramasamy
 
-🚀 Technology leader building AI, AR, and cloud-native products
+🚀 Technology leader building AI, AR, and cloud-native products | Vice President at Vaken Technologies
 
 - 🌍 Chennai, Tamil Nadu, India  
 - 💼 General Manager – Product & Project Management  
@@ -18,6 +18,14 @@ Skilled at turning complex business requirements into scalable, secure solutions
 - Led global teams of 50–640+ members across multiple product lines. 
 - Launched multimillion-dollar AI/AR solutions for global clients (including SoftBank).
 - Experienced across full SDLC: architecture, development, DevOps, QA, and production support. 
+
+---
+
+## Focus areas
+
+- Enterprise SaaS: MDM, HR, OMS, POS, and ERP integrations (Baan, etc.) [page:3]  
+- Cloud & DevOps: GCP, Azure, Cloud SQL, Jenkins, Git, Redmine [page:3]  
+- AI & AR: OpenAI GPT integrations, AI-driven AR smart glasses and no-code platforms
 
 ---
 
