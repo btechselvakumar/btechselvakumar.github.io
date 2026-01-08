@@ -1,6 +1,6 @@
 # Selvakumar Ramasamy
 
-🚀 Driving global technology transformation—one innovation at a time.  
+🚀 Technology leader building AI, AR, and cloud-native products
 
 - 🌍 Chennai, Tamil Nadu, India  
 - 💼 General Manager – Product & Project Management  
